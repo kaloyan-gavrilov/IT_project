@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #000000;
+}
+
+.head_img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10%;
+}
+
+#history {
+    margin: 10px;
+}
+
+section#history h3 {
+    font-size: 40px;
+    text-shadow: 4px 4px 4px rgba(116, 116, 116, 1);
+    color: rgb(255, 255, 255);
+}
+
+p#history-text1 {
+    width: 50%;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    background-color: #f0f8ff;
+    padding: 10px;
+    margin: 10px;
+}
+
+p#history-text2 {
+    position: absolute;
+    right: 0px;
+    width: 50%;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    background-color: #f0f8ff;
+    padding: 10px;
+    margin: 10px;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+}
