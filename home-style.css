@@ -13,32 +13,120 @@ body {
     margin-bottom: 10%;
 }
 
-#history {
+section {
     margin: 10px;
+    margin-bottom: 30px;
 }
 
-section#history h3 {
-    font-size: 40px;
+h3 {
+    font-family: verdana;
+    font-size: 4vw;
     text-shadow: 4px 4px 4px rgba(116, 116, 116, 1);
     color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+
+#history-div {
+    display: flex;
+}
+
+div#history-div p {
+    flex: 0.5;
+}
+
+div#history-div img {
+    flex: 1;
+    max-width: 35%;
+}
+
+section#history img {
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 p#history-text1 {
     width: 50%;
-    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    height: 100%;
+    box-shadow: rgba(75, 185, 254, 0.4) 5px 5px, rgba(75, 185, 254, 0.3) 10px 10px, rgba(75, 185, 254, 0.2) 15px 15px, rgba(75, 185, 254, 0.1) 20px 20px;
     background-color: #f0f8ff;
-    padding: 10px;
-    margin: 10px;
+    padding: 15px;
+    margin: 3vw 3vw 3vw 1vw;
+    font-size: 1.5vw;
 }
 
 p#history-text2 {
-    position: absolute;
-    right: 0px;
-    width: 50%;
-    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    display: block;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(75, 185, 254, 0.4) 5px 5px, rgba(75, 185, 254, 0.3) 10px 10px, rgba(75, 185, 254, 0.2) 15px 15px, rgba(75, 185, 254, 0.1) 20px 20px;
     background-color: #f0f8ff;
+    padding: 15px;
+    margin: 3vw 1vw 3vw 1vw;
+    font-size: 1.5vw;
+}
+
+img#info_car {
+    display: block;
+    margin: 2vw auto 2vw auto;
+    width: 50%;
+    border-radius: 15px;
+}
+
+.info_el {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    text-align: center;
+}
+
+.info_el div {
+    background-color: #f0f8ff;
+    width: fit-content;
+    padding: 1vw;
+    border-radius: 10px;
+    box-shadow: 17px 15px 27px -9px rgba(255, 255, 255, 0.4);
+    font-size: 1.5vw;
+}
+
+.info:nth-child(1) {
+    flex: 0.33;
+    margin-right: 35px;
+}
+
+.info:nth-child(2) {
+    flex: 0.33;
+    margin-right: 35px;
+    transition-delay: 100ms;
+}
+
+.info:nth-child(3) {
+    flex: 0.33;
+    margin-right: 35px;
+    transition-delay: 200ms;
+}
+
+.specs_all {
+    display: flex;
+}
+
+img#specs_car {
+    display: block;
+    margin: 2vw;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.specs_el div {
+    margin: 1.5vw 0 1.5vw 0;
+    background-color: #f0f8ff;
+    width: fit-content;
     padding: 10px;
-    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 17px 15px 27px -9px rgba(255, 255, 255, 0.4);
+    font-size: 1.5vw;
 }
 
 .hidden {
@@ -52,4 +140,17 @@ p#history-text2 {
     opacity: 1;
     filter: blur(0px);
     transform: translateX(0);
+}
+
+.v_hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-100%);
+    transition: all 2s;
+}
+
+.v_show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0);
 }
